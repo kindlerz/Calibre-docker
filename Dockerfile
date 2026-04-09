@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    wget xz-utils fonts-liberation calibre nodejs npm curl clang && \
+    wget unzip xz-utils fonts-liberation calibre nodejs npm curl clang && \
     rm -rf /var/lib/apt/lists/*
 
 RUN curl -fsSL https://deno.land/install.sh -o install.sh && \
